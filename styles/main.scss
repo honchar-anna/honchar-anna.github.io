@@ -1,0 +1,1531 @@
+@import'scss-files/base';
+@import 'scss-files/mixtins';
+
+@font-face {
+   font-family: 'Montserrat-medium';
+   src: url(../fonts/Montserrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+   font-family: 'Montserrat-black';
+   src: url(../fonts/Montserrat/static/Montserrat-Black.ttf);
+}
+
+@font-face {
+   font-family: 'Montserrat-light';
+   src: url(../fonts/Montserrat/static/Montserrat-Light.ttf);
+}
+
+@font-face {
+   font-family: 'Roboto';
+   src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+.container {
+   width: 1440px;
+   height: auto;
+   margin: 0 auto;
+   box-sizing: border-box;
+
+
+   &__home {
+      width: 100%;
+      height: 700px;
+      box-sizing: border-box;
+
+      color: white;
+      background-image: url(../imgs/Background.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      padding-top: 46px;
+      padding-left: 247px;
+
+      &_logo {
+         font-family: 'Montserrat-medium';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 20px;
+         line-height: 24px;
+      }
+
+      &_lo-in {
+         font-family: 'Montserrat-light';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 17px;
+         margin-left: 749.5px;
+         margin-top: -19px;
+
+
+      }
+
+      &_sign-up {
+         font-family: 'Montserrat-light';
+         font-style: normal;
+         font-weight: 400;
+         font-size: 14px;
+         line-height: 17px;
+         margin-left: 749.5px;
+         margin-top: -19px;
+         width: 90px;
+         height: 36px;
+         border: 2px solid #FFFFFF;
+         border-radius: 40px;
+         margin-left: 812px;
+         padding-top: 7px;
+         padding-left: 16px;
+         margin-top: -28px;
+      }
+
+      &_name {
+         margin-top: 149px;
+         margin-left: -248px;
+         letter-spacing: 0px;
+         word-spacing: 6px;
+         font-family: 'Montserrat-medium';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 52px;
+         line-height: 63px;
+         text-align: center;
+      }
+
+      &_text {
+         margin-top: 26px;
+         margin-left: 274px;
+         letter-spacing: -2px;
+         word-spacing: 2px;
+         font-family: 'Montserrat-light';
+         font-weight: 300;
+         font-size: 24px;
+         line-height: 24px;
+         display: flex;
+         align-items: flex-end;
+         text-align: center;
+      }
+
+      &_button {
+         width: 225px;
+         height: 40px;
+         background: #FF4E50;
+         color: white;
+         border: none;
+         border-radius: 40px;
+         margin-left: 361px;
+         padding-top: 0px;
+         padding-left: 0px;
+         margin-top: 35px;
+         font-family: 'Montserrat-medium';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 17px;
+         text-align: center;
+      }
+   }
+
+   &__info {
+      @include margin;
+      width: 940px;
+      height: 461px;
+      box-sizing: border-box;
+      display: grid;
+      grid-template-columns: 300px 19px 298px 19px 302px;
+      grid-template-rows: 57px 1px 400px;
+
+      // border: 0.5px solid black;
+      &_work-name {
+         @include font;
+         width: 342px;
+         height: 32px;
+         margin-left: 297px;
+         margin-top: -6px;
+
+         word-spacing: 4px;
+      }
+
+      &_card1 {
+         width: 300px;
+         height: 400px;
+         box-sizing: border-box;
+         background-image: url(../imgs/Step1mage.png);
+         background-size: cover;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 2;
+         grid-row-end: 3;
+         margin-top: 4px;
+         padding-top: 219px;
+         padding-left: 24px;
+         padding-right: 0px;
+
+         .button {
+            @include spet;
+            width: 70px;
+            height: 20px;
+            background: #FF4E50;
+            border-radius: 40px;
+            padding-top: 5px;
+            padding-left: 15px;
+         }
+
+         .h1 {
+            @include h1;
+            margin-top: 22px;
+
+         }
+
+         .text {
+            @include text;
+            word-spacing: -3.5px;
+            letter-spacing: 0.5px;
+            margin-top: 24px;
+            margin-right: 25px;
+         }
+      }
+
+      &_card2 {
+         width: 300px;
+         height: 400px;
+         box-sizing: border-box;
+         margin-top: 4px;
+         padding-top: 250px;
+         margin-left: 1px;
+         padding-left: 25px;
+         background-image: url(../imgs/Step2image.png);
+         background-size: cover;
+         grid-column-start: 3;
+         grid-column-end: 4;
+         grid-row-start: 2;
+         grid-row-end: 3;
+
+         .button {
+            @include spet;
+            padding-top: 6px;
+            padding-left: 12px;
+            width: 70px;
+            height: 20px;
+            background: #FF4E50;
+            border-radius: 40px;
+
+         }
+
+         .h1 {
+            @include h1;
+            margin-top: 23px;
+
+         }
+
+         .text {
+            @include text;
+            word-spacing: -2.5px;
+            margin-top: 19px;
+            margin-right: 22px;
+         }
+      }
+
+      &_card3 {
+         width: 300px;
+         height: 400px;
+         box-sizing: border-box;
+         
+         background-image: url(../imgs/Step3image.png);
+         background-size: cover;
+         grid-column-start: 5;
+         grid-column-end: 6;
+         grid-row-start: 2;
+         grid-row-end: 3;
+         margin-top: 4px;
+         padding-top: 219px;
+         margin-left: 4px;
+         padding-left: 25px;
+
+         .button {
+            @include spet;
+            width: 70px;
+            height: 20px;
+            background: #FF4E50;
+            border-radius: 40px;
+            padding-top: 6px;
+    padding-left: 12px;
+         }
+
+         .h1 {
+            @include h1;
+            margin-top: 22px;
+
+         }
+
+         .text {
+            @include text;
+            margin-top: 24px;
+            margin-right: 25px;
+         }
+      }
+   }
+
+   &__meet {
+      @include margin;
+      width: 940px;
+      height: 361px;
+      box-sizing: border-box;
+
+      &_name {
+         @include font;
+         width: 491px;
+         height: 32px;
+         word-spacing: 3px;
+         margin-left: 224px;
+         margin-top: -6px;
+      }
+
+      .avatar1 {
+         box-sizing: border-box;
+         width: 221px;
+         margin-top: 35px;
+         height: 205px;
+
+         .photo {
+            width: 120px;
+            height: 120px;
+            margin-left: 50px;
+            margin-top: 0px;
+            background-image: url(../imgs/Avatar.png);
+            background-size: cover;
+         }
+
+         .ava-h {
+            @include ava-h;
+            margin-left: 0px;
+            margin-top: 19px;
+
+         }
+
+         .ava-p {
+            @include ava-p;
+            margin-left: 0px;
+            margin-top: 21px;
+         }
+      }
+
+      .avatar2 {
+         box-sizing: border-box;
+         width: 221px;
+         margin-top: 35px;
+         height: 205px;
+         margin-left: 240px;
+         margin-top: -205px;
+
+         .photo {
+            width: 120px;
+            height: 120px;
+            margin-left: 51px;
+background-size: cover;
+            background-image: url(../imgs/Avatar2.png);
+
+         }
+
+         .ava-h {
+            @include ava-h;
+            margin-top: 19px;
+
+         }
+         .ava-p {
+            @include ava-p;
+            margin-top: 21px;
+         }
+
+      }
+
+      .avatar3 {
+         box-sizing: border-box;
+         width: 221px;
+         margin-top: 35px;
+         height: 205px;
+         margin-left: 485px;
+         margin-top: -205px;
+         height: 224px;
+
+         .photo {
+            width: 120px;
+            height: 120px;
+background-size: cover;
+            background-image: url(../imgs/Avatar3.png);
+            margin-left: 46px;
+         }
+
+         .ava-h {
+            @include ava-h;
+            margin-top: 19px;
+            margin-left: -10px;
+         }
+
+         .ava-p {
+            @include ava-p;
+            margin-top: 26px;
+         }
+      }
+
+      .avatar4 {
+         box-sizing: border-box;
+         width: 221px;
+         margin-top: 35px;
+         height: 205px;
+         margin-left: 724px;
+         margin-top: -225px;
+         height: 224px;
+         padding-right: 2px;
+
+         .photo {
+            width: 120px;
+            height: 120px;
+background-size: cover;
+            background-image: url(../imgs/Avatar4.png);
+            margin-left: 46px;
+         }
+
+         .ava-h {
+            @include ava-h;
+            margin-top: 19px;
+            margin-left: -10px;
+         }
+
+         .ava-p {
+            
+            @include ava-p;
+            margin-top: 27px;
+            margin-left: -2.5px;
+         }
+      }
+
+      .meet-buuton {
+         
+         font-family: 'Montserrat-medium';
+         font-style: normal;
+         font-weight: 700;
+         font-size: 14px;
+         line-height: 17px;
+         text-align: center;
+         color: #FF4E50;
+         margin-left: 381px;
+         margin-top: 37px;
+         word-spacing: 1px;
+         padding-left: 4px;
+         width: 180px;
+         height: 40px;
+         background: #FFFFFF;
+         border: 2px solid #FF4E50;
+         border-radius: 40px;
+      }
+   }
+
+   &__ideas {
+      @include margin;
+      width: 940px;
+      height: 1031px;
+      display: grid;
+      grid-template-columns: 300px 19px 300px 20px 301px;
+      grid-template-rows: 66px 310px 19px 310px 19px 311px;
+
+      &_name {
+         @include font;
+         width: 413px;
+         height: 32px;
+         letter-spacing: 0.5px;
+         word-spacing: 0px;
+         margin-left: 263px;
+         margin-top: -1px;
+      }
+
+      .img1 {
+         width: 300px;
+         height: 310px;
+         box-sizing: border-box;
+         background-image: url(../imgs/Sport.png);
+         background-size: cover;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 2;
+         grid-row-end: 3;
+      }
+
+      .img2 {
+         width: 300px;
+         height: 310px;
+         box-sizing: border-box;
+         background-image: url(../imgs/Healath.png);
+         background-size: cover;
+         grid-column-start: 3;
+         grid-column-end: 4;
+         grid-row-start: 2;
+         grid-row-end: 3;
+      }
+
+      .img3 {
+         width: 300px;
+         height: 310px;
+         box-sizing: border-box;
+         background-image: url(../imgs/Extreme.png);
+         background-size: cover;
+         grid-column-start: 5;
+         grid-column-end: 6;
+         grid-row-start: 2;
+         grid-row-end: 3;
+      }
+
+      .img4 {
+         width: 300px;
+         height: 310px;
+         margin-top: 2px;
+         box-sizing: border-box;
+         background-image: url(../imgs/Games.png);
+         background-size: cover;
+         grid-column-start: 1;
+         grid-column-end: 2;
+         grid-row-start: 4;
+         grid-row-end: 5;
+      }
+
+      .img5 {
+         width: 620px;
+         height: 310px;
+         margin-top: 2px;
+         box-sizing: border-box;
+         background-image: url(../imgs/Culture.png);
+         background-size: cover;
+         grid-column-start: 3;
+         grid-column-end: 5;
+         grid-row-start: 4;
+         grid-row-end: 5;
+      }
+
+      .img6 {
+         width: 620px;
+         height: 310px;
+         margin-top: 2px;
+         box-sizing: border-box;
+         background-image: url(../imgs/CultureCopy.png);
+         background-size: cover;
+         grid-column-start: 1;
+         grid-column-end: 4;
+         grid-row-start: 6;
+         grid-row-end: 6;
+      }
+
+      .img7 {
+         width: 300px;
+         height: 310px;
+         margin-top: 2px;
+         box-sizing: border-box;
+         background-image: url(../imgs/GamesCopy.png);
+         background-size: cover;
+         grid-column-start: 5;
+         grid-column-end: 5;
+         grid-row-start: 6;
+         grid-row-end: 6;
+      }
+
+   }
+
+   &__crate {
+      width: 482px;
+      height: 158px;
+      margin-top: 95px;
+      margin-left: 478px;
+
+      &_name {
+         @include font;
+         width: 358px;
+         height: 32px;
+         letter-spacing: 0.5px;
+         word-spacing: 0px;
+         margin-left: 62px;
+         margin-top: -1px;
+      }
+
+      .text-1 {
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 300;
+         font-size: 18px;
+         line-height: 14px;
+         display: flex;
+         text-align: center;
+         color: #666666;
+         margin-left: 104px;
+         margin-top: 54px;
+      }
+
+      form {
+         margin-top: 25px;
+
+         input {
+            width: 299px;
+            height: 40px;
+            padding-left: 14px;
+            padding-top: 3px;
+            background: #FFFFFF;
+            border: 1px solid #D4D4D4;
+            color: #999999;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 16px;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.073313);
+            border-radius: 3px;
+         }
+
+         .crate-buuton {
+            width: 172.12px;
+            height: 40px;
+            background: #FF4E50;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            margin-left: 6px;
+            padding-top: -13px;
+            padding-left: 0px;
+            margin-top: 0px;
+         }
+      }
+
+   }
+
+   &__footer {
+      width: 1440px;
+      height: 224px;
+      padding-top: 36px;
+      margin: auto;
+      box-sizing: border-box;
+      margin-top: 107px;
+      padding-left: 249px;
+      border-top: #FF4E50 2px solid;
+
+      .box {
+         width: 944px;
+         height: 186px;
+
+         .logo {
+            font-family: 'Montserrat-light';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FF4E50;
+         }
+
+         .text-2 {
+            width: 114px;
+            height: 156px;
+            margin-top: 12px;
+            margin-left: 241px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 26px;
+            color: #999999;
+         }
+
+         .name {
+            font-family: 'Montserrat-medium';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 17px;
+            color: #444444;
+            margin-top: -18px;
+            margin-left: 242px;
+
+         }
+
+         .par {
+            margin-top: -17px;
+            margin-left: 480px;
+         }
+
+         .b {
+            font-family: 'Montserrat-light';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+
+            letter-spacing: 1px;
+            margin-top: -184px;
+            margin-left: 862px;
+            color: #CCCCCC;
+         }
+
+         .b1 {
+            width: 110px;
+            height: 24px;
+            background-image: url(../imgs/logo.png);
+            margin-top: 6px;
+            margin-left: 831px;
+         }
+      }
+   }
+  
+}
+
+@media screen  and (max-width: 768px) {
+   .container {
+      width:768px;
+   
+   
+      &__home {
+         width: 100%;
+         height: 700px;
+         background-position: center;
+         padding-left: 49px;
+   
+         &_lo-in {
+            margin-left: 516px;
+         }
+   
+         &_sign-up {
+            
+            margin-left: 579px;
+    padding-top: 8px;
+    padding-left: 16px;
+    margin-top: -28px;
+         }
+   
+         &_name {
+            margin-left: -50px;
+         }
+   
+         &_text {
+            margin-left: 137px
+         }
+   
+         &_button {
+            margin-left: 223px;
+         }
+      }
+   
+      &__info {
+         margin-left: 10px;
+         width: 748px;
+         height: 461px;
+         box-sizing: border-box;
+         display: grid;
+         grid-template-columns: 236px 19px 236px 18px 246px;
+         grid-template-rows: 57px 402px 400px;
+
+         &_work-name {
+            @include font;
+            width: 342px;
+            height: 32px;
+            font-family: 'Montserrat-medium';
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 27px;
+margin-left: 203px;
+margin-top: -1px;
+         }
+   
+         &_card1 {
+            width: 236px;
+            height: 400px;
+            padding-top: 205px;
+            padding-left: 20px;
+   
+            .button {
+               padding-top: 6px;
+               padding-left: 14px;
+            }
+   
+            .h1 {
+               @include h1;
+               line-height: 15px;
+                margin-top: 45px;
+   
+            }
+   
+            .text {
+               margin-top: 28px;
+            }
+         }
+   
+         &_card2 {
+            width: 236px;
+            height: 400px;
+            padding-top: 255px;
+            margin-left: 1px;
+            padding-left: 20px;
+   
+            
+   
+            .h1 {
+               line-height: 15px;
+               margin-top: 16px;
+               margin-right: 20px;
+   
+            }
+   
+            .text {
+               word-spacing: -3.5px;
+               margin-top: 21px;
+            }
+         }
+   
+         &_card3 {
+            width: 236px;
+            height: 400px;
+            padding-top: 205px;
+            margin-left: 4px;
+            padding-left: 20px;
+            .button {
+               padding-left: 12px;
+    margin-left: -1px;
+            }
+   
+            .h1 {
+               line-height: 15px;
+               margin-top: 44px;
+   
+            }
+   
+            .text {
+               margin-top: 29px;
+            }
+         }
+      }
+   
+      &__meet {
+         @include margin;
+         width: 492px;
+         height: 605px;
+         margin-left: 148px;
+         margin-top: 102px;
+   
+         &_name {
+            font-family: "Montserrat-medium";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 32px;
+            text-align: center;
+            width: 496px;
+            height: 27px;
+            word-spacing: 3px;
+            margin-left: -16px;
+            word-spacing: 4px;
+            margin-top: -11px;
+            margin-right: -21px;
+         }
+   
+         .avatar1 {
+            width: 236px;
+            margin-left: -10px;
+            margin-top: 37px;
+   
+            .photo {
+               margin-left: 58px;
+            }
+         }
+   
+         .avatar2 {
+            margin-left: -3px;
+            margin-top: 54px;
+   
+         }
+   
+         .avatar3 {
+            margin-left: 246px;
+            margin-top: -463px;
+   
+            .photo {
+               margin-left: 58px;
+            }
+   
+            .ava-h {
+               margin-left: 13px;
+            }
+            .ava-p {
+               margin-left: 4px;
+               word-spacing: 2px;
+            }
+   
+         }
+   
+         .avatar4 {
+            margin-left: 258px;
+            margin-top: 35px;
+   
+            .photo {
+               background-image: url(../imgs/Avatar4.png);
+               margin-left: 46px;
+            }
+   
+            .ava-h {
+               margin-top: 19px;
+    
+               margin-left: -8px
+            }
+   
+            .ava-p {
+               margin-top: 21px;
+               margin-left: -8.5px;
+            }
+         }
+   
+         .meet-buuton {
+            margin-left: 146px;
+    margin-top: 21px;
+         }
+      }
+   
+      &__ideas {
+         width: 748px;
+height: 1031px;
+         margin-left: 10px;
+    margin-top: 91px;
+    grid-template-columns: 236px 20px 236px 20px 236px;
+    grid-template-rows: 66px 310px 18px 310px 19px 311px;
+   
+         &_name {
+            width: 413px;
+            height: 32px;
+            font-family: "Montserrat-medium";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 21px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: 0.5px;
+            word-spacing: 4px;
+            margin-left: 168px;
+            margin-top: 4px;
+         }
+   
+         .img1 {
+            width: 236px;
+            margin-top: 3px;
+            background-image: url(../imgs/imgs-768/Sport.png);
+         }
+   
+         .img2 {
+            width: 236px;
+            margin-top: 3px;
+            background-image: url(../imgs/imgs-768/Healath.png);
+         }
+   
+         .img3 {
+            width: 236px;
+            margin-top: 3px;
+            background-image: url(../imgs/imgs-768/Extreme.png);
+         }
+   
+         .img4 {
+            width: 236px;
+            margin-top: 5px;
+            background-image: url(../imgs/imgs-768/Games.png);
+         }
+   
+         .img5 {
+            width: 492px;
+            margin-top: 5px;
+            background-image: url(../imgs/imgs-768/Culture.png);
+         }
+   
+         .img6 {
+            width: 492px;
+            margin-top: 5px;
+            background-image: url(../imgs/imgs-768/Culture\ Copy.png);
+         }
+         .img7 {
+            width: 236px;
+            margin-top: 6px;
+            background-image: url(../imgs/imgs-768/Games\ Copy.png);
+         }
+      
+      }
+      
+ &__crate {
+         margin-top: 99px;
+         margin-left: 144px;
+   
+         &_name {
+            width: 358px;
+            height: 32px;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+            word-spacing: 0px;
+            margin-left: 62px;
+            margin-top: -1px;
+         }
+   
+         .text-1 {
+            margin-top: 52px;
+         }
+   
+         form {
+            margin-top: 25px;
+   
+            input {
+              padding-left: 13px;
+            }
+   
+            .crate-buuton {
+               width: 172.12px;
+               height: 40px;
+               background: #FF4E50;
+               color: white;
+               border: none;
+               border-radius: 40px;
+               margin-left: 6px;
+               padding-top: -13px;
+               padding-left: 0px;
+               margin-top: 0px;
+            }
+         }
+   
+      }
+   
+      &__footer {
+         width: 768px;
+         height: 224px;
+         padding-top: 0px;
+         margin: auto;
+         margin-top: 105px;
+         padding-left: 0px;
+       
+   
+         .box {
+            width: 768px;
+height: 224px;
+   
+            .logo {
+               margin-top: 36px;
+               margin-left: 39px;
+            }
+   
+            .text-2 {
+               margin-top: 11px;
+    margin-left: 265px;
+            }
+   
+            .name {
+               margin-left: 267px;
+   
+            }
+   
+            .par {
+               margin-left: 437px;
+            }
+   
+            .b {
+               margin-left: 649px;
+            }
+   
+            .b1 {
+               margin-top: 7px;
+    margin-left: 618px;
+            }
+         }
+      }
+   }
+}
+@media screen and (max-width: 320px) {
+   .container {
+      width: 320px;
+      height: auto;
+      margin: 0 auto;
+      box-sizing: border-box;
+   
+         &__home {
+            width: 320px;
+         height: 540px;
+         background-image: url(../imgs/imgs-350/Bitmap.png);
+         
+         background-position: center;
+         padding-top: 46px;
+         padding-left: 247px;
+      
+            &_logo {
+               font-family: 'Montserrat-medium';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+margin-top: 107px;
+margin-left: -161px;
+            }
+            &_lo-in {
+               font-family: 'Montserrat-light';
+               font-style: normal;
+               font-weight: 400;
+               font-size: 14px;
+               line-height: 17px;
+               margin-left: -162px;
+               margin-top: -147px;
+            }
+            &_sign-up {
+              
+               width: 90px;
+               height: 36px;
+               border: 2px solid #FFFFFF;
+               border-radius: 40px;
+               margin-left: -100px;
+               padding-top: 8px;
+               padding-left: 16px;
+               
+            }
+            
+      
+            
+            &_name {
+               margin-top: 149px;
+               margin-left: -246px;
+               letter-spacing: 0px;
+               word-spacing: 4px;
+               font-size: 30px;
+               line-height: 37px;
+               text-align: center;
+            }
+      
+            &_text {
+               width: 280px;
+    height: 49px;
+    margin-top: 4px;
+    margin-left: -227px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+            }
+      
+            &_button {
+               width: 279px;
+               height: 40px;
+               background: #FF4E50;
+               color: white;
+               border: none;
+               border-radius: 40px;
+               margin-left: -226px;
+               padding-top: 0px;
+               padding-left: 0px;
+               margin-top: 16px;
+               font-family: "Montserrat-medium";
+               font-style: normal;
+               font-weight: 700;
+               font-size: 14px;
+               line-height: 17px;
+               text-align: center;
+            }
+         }
+      
+         &__info {
+            width: 300px;
+height: 781px;
+margin-left: 6px;
+            box-sizing: border-box;
+            display: block;
+      
+            // border: 0.5px solid black;
+            &_work-name {
+               @include font;
+               width: 320px;
+               height: 32px;
+               margin-left: -7px;
+    margin-top: -63px;
+    font-size: 22px;
+            }
+      
+            &_card1 {
+               width: 300px;
+               height: 240px;
+               box-sizing: border-box;
+               background-image: url(../imgs/imgs-350/Step\ 1.png);
+               background-size: cover;
+               margin-top: 12px;
+               margin-left: 4px;
+      
+               .button {
+                  display: none
+               }
+      
+               .h1 {
+                  display: none
+      
+               }
+      
+               .text {
+                  display: none;
+               }
+            }
+      
+            &_card2 {
+               width: 300px;
+               height: 230px;
+               box-sizing:border-box ;
+               margin-top: 10px;
+               margin-left: 4px;
+    background-image: url(../imgs/imgs-350/Step\ 2.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+      
+               .button {
+                  display: none
+               }
+      
+               .h1 {
+                  display: none
+      
+               }
+      
+               .text {
+                  display: none;
+               }
+            }
+      
+            &_card3 {
+               width: 300px;
+               height: 240px;
+               margin-top: -5px;
+               margin-left: 4px;
+               background-image: url(../imgs/imgs-350/Step\ 3.png);
+               background-size: cover;
+               
+      
+               .button {
+                  display: none
+               }
+      
+               .h1 {
+                  display: none
+      
+               }
+      
+               .text {
+                  display: none;
+               }
+            }
+         }
+      
+         &__meet {
+            
+            width: 300px;
+height: 1032px;
+margin-top: 43px;
+margin-left: 6px;
+            display: block;
+            box-sizing: border-box;
+      
+            &_name {
+               display: block;
+               font-size: 22px;
+               width: 280px;
+height: 54px;
+line-height: 27px;
+word-spacing: 2px;
+margin-left: 13px;
+margin-top: -4px;
+            }
+      
+            .avatar1 {
+               box-sizing: border-box;
+               width: 236px;
+               height: 205px;
+               margin-top: 14px;
+               margin-left: 36px;
+               
+               
+      
+               .photo {
+                  width: 120px;
+                  height: 120px;
+                  margin-left: 57px;
+                  margin-top: 0px;
+               }
+      
+               .ava-h {
+                  @include ava-h;
+                  margin-left: 0px;
+                  margin-top: 19px;
+      
+               }
+      
+               .ava-p {
+                  @include ava-p;
+                  margin-left: 0px;
+                  margin-top: 21px;
+               }
+            }
+      
+            .avatar2 {
+               width: 236px;
+               margin-left: 43px;
+                margin-top: 256px;
+               height: 205px;
+               
+      
+               .photo {
+                 
+      
+                  background-image: url(../imgs/Avatar2.png);
+      
+               }
+      
+               .ava-h {
+                  margin-left: -13px;
+      
+               }
+      
+               .ava-p {
+                  margin-left: -6px;
+                  margin-right: 8px;
+      
+               }
+            }
+      
+            .avatar3 {
+               width: 236px;
+               margin-left: 41px;
+               margin-top: -445px;
+               height: 205px;
+      
+               .photo {
+                  
+                  background-image: url(../imgs/Avatar3.png);
+                  margin-left: 53px;
+               }
+      
+               .ava-h {
+                  @include ava-h;
+                  margin-top: 19px;
+                  margin-left: -10px;
+               }
+      
+               .ava-p {
+                  @include ava-p;
+                  margin-top: 26px;
+               }
+            }
+      
+            .avatar4 {
+               width: 236px;
+               margin-left: 48px;
+    margin-top: 256px;
+               height: 205px;
+               
+      
+               .photo {
+                  
+                  background-image: url(../imgs/Avatar4.png);
+                  margin-left: 46px;
+               }
+      
+               .ava-h {
+                  
+                  margin-left: -21px;
+               }
+      
+               .ava-p {
+                  margin-top: 21px;
+                  margin-left: -21.5px;
+               }
+            }
+      
+            .meet-buuton {
+               margin-left: 13px;
+               margin-top: 37px;
+               width: 281px;
+            }
+         }
+      
+         &__ideas {
+            width: 300px;
+            height: 987px;
+            display: block;
+            margin-left: 10px;
+      
+            &_name {
+               
+               width: 256px;
+               height: 54px;
+               font-size: 22px;
+               letter-spacing: 0.5px;
+               word-spacing: 0px;
+               margin-left: 21px;
+               line-height: 26px;
+               margin-top: -56px;
+            }
+      
+            .img1 {
+               width: 300px;
+               height: 120px;
+               margin-top: 32px;
+               background-image: url(../imgs/imgs-350/Sport.png);
+               background-size: cover;
+               
+            }
+      
+            .img2 {
+               width: 300px;
+               height: 120px;
+               margin-top: 10px;
+               background-image: url(../imgs/imgs-350/Healath.png);
+               background-size: cover;
+            }
+      
+            .img3 {
+               width: 300px;
+               height: 120px;
+               margin-top: 10px;
+               background-image: url(../imgs/imgs-350/Extreme.png);
+               background-size: cover;
+            }
+      
+            .img4 {
+               width: 300px;
+               height: 120px;
+               margin-top: 10px;
+               background-image: url(../imgs/imgs-350/Games.png);
+               background-size: cover;;
+            }
+      
+            .img5 {
+               width: 300px;
+               height: 120px;
+               margin-top: 10px;
+               background-image: url(../imgs/imgs-350/Culture.png);
+               background-size: cover;
+            }
+      
+            .img6 {
+               width: 300px;
+               height: 120px;
+               margin-top: 10px;
+               background-image: url(../imgs/imgs-350/Culture\ Copy.png);
+               background-size: cover;
+            }
+      
+            .img7 {
+               width: 300px;
+               height: 120px;
+               margin-top: 10px;
+               background-image: url(../imgs/imgs-350/Games\ Copy.png);
+               background-size: cover;
+            }
+      
+         }
+      
+         &__crate {
+            width: 300px;
+            height: 192px;
+            margin-top: 39px;
+            margin-left: 6px;
+      
+            &_name {
+               
+               width: 280px;
+               height: 354px;
+               margin-left: 14px;
+               margin-top: -6px;
+               line-height: 28px;
+            font-size: 22px
+            }
+      
+            .text-1 {
+               margin-left: 17px;
+               margin-top: -279px;
+            }
+      
+            form {
+               margin-top: 15px;
+               margin-left: 14px;
+      
+               input {
+                  width: 280px;
+               }
+      
+               .crate-buuton {
+                  width: 280px;
+                  height: 40.5px;
+                  margin-left: 0px;
+                  margin-top: 10px;
+                  font-style: normal;
+                  padding-left: 10px;
+    letter-spacing: 0.5px;
+    word-spacing: 0px;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+               }
+            }
+      
+         }
+      
+         &__footer {
+            width: 320px;
+            height: 204px;
+            padding-top: 6px;
+            margin: auto;
+            box-sizing: border-box;
+            margin-top: 42px;
+            padding-left: 9px;
+            
+      
+            .box {
+               width: 280px;
+               height: 183px;
+      
+               .logo {
+                  margin-top: 13px;
+    margin-left: 92px;
+               }
+      
+               .text-2 {
+                  width: 199px;
+                  height: 52px;
+                  margin-top: -74px;
+                  margin-left: 57px;
+                  word-spacing: 9px;
+                  font-family: 'Roboto';
+                  font-style: normal;
+                  font-weight: 300;
+                  font-size: 14px;
+                  line-height: 26px;
+                  color: #999999;
+                  br{
+                     display: none;
+                  }
+               }
+      
+               .name {
+                  margin-top: 14px;
+                  margin-left: 117px;
+      
+               }
+      
+               .par {
+                  margin-top: 58px;
+                  margin-left: 119px;
+               }
+      
+               .b {
+                  margin-top: 36px;
+    margin-left: 111px;
+               }
+      
+               .b1 {
+                  margin-top: 7px;
+                  margin-left: 96px;
+               }
+            }
+         }
+        
+      
+      
+         }}

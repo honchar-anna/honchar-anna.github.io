@@ -1,0 +1,61 @@
+@mixin font {
+   font-family: 'Montserrat-medium';
+font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+text-align: center;
+}
+@mixin spet {
+   font-family: 'Montserrat-light';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+letter-spacing: 2px;
+color: #FFFFFF;
+}
+@mixin h1 {
+   font-family: 'Montserrat-medium';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+word-spacing: 0px;
+letter-spacing: 0.5px;
+line-height: 26px;
+color: #E3E3E3;
+}
+@mixin text {
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 14px;
+color: #E3E3E3;
+word-spacing: -3.5px;
+   letter-spacing: 0.5px;
+}
+
+@mixin margin {
+   margin-left: 250px;
+   margin-top: 95px;  
+}
+@mixin ava-h {
+   font-family: 'Montserrat-medium';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #444444;
+word-spacing: 3px;
+}
+@mixin ava-p {
+   font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 14px;
+line-height: 14px;
+text-align: center;
+color: #666666;
+}
